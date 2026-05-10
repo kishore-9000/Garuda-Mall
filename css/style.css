@@ -201,7 +201,7 @@ nav.scrolled {
 /* Hero Section */
 .hero {
     height: 100vh;
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../assets/images/hero_bg.jpg');
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../mall2.jpg');
     background-size: cover;
     background-position: center;
     display: flex;
@@ -210,6 +210,14 @@ nav.scrolled {
     text-align: center;
     color: var(--white);
     position: relative;
+    animation: bgSlide 15s infinite;
+}
+
+@keyframes bgSlide {
+    0% { background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../mall2.jpg'); }
+    33% { background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../mall1.jpg'); }
+    66% { background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../mall.jpg'); }
+    100% { background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../mall2.jpg'); }
 }
 
 .hero-content h1 {
