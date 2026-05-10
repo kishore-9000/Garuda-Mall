@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GARUDA MALL | Luxury Fashion & Tradition | Palamaner</title>
+    <meta name="description" content="Experience the ultimate luxury shopping at Garuda Mall, Palamaner. Premium fashion for Men, Women, and Kids. Tradition meets modern style.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Playfair+Display:wght@400;700;900&family=Poppins:wght@300;400;500;600&family=Lora:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+        function handleImageError(img) {
+            img.onerror = null;
+            img.src = 'https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=600&q=60';
+        }
+    </script>
+</head>
+<body>
+
+    <!-- Sticky Navigation -->
+    <nav id="navbar">
+        <div class="logo-container">
+            <img onerror="handleImageError(this)" src="eagle.jpg" alt="Garuda Logo" class="mall-logo">
+            <a href="index.html" class="logo">GARUDA MALL</a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="men.html">Men</a></li>
+            <li><a href="women.html">Women</a></li>
+            <li><a href="kids.html">Kids</a></li>
+            <li><a href="children.html">Children</a></li>
+            <li><a href="traditional.html">Traditional</a></li>
+            <li><a href="index.html#offers">Offers</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+        <div class="nav-icons">
+            <i class="fas fa-search"></i>
+            <i class="fas fa-user"></i>
+            <i class="fas fa-shopping-cart"></i>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero parallax" id="home">
+        <div class="hero-content">
+            <p>Welcome to</p>
+            <h1>GARUDA MALL</h1>
+            <p>Fashion • Tradition • Luxury</p>
+            <div class="hero-btns">
+                <a href="#men" class="btn btn-primary">Shop Now</a>
+                <a href="#about" class="btn btn-outline">Explore Mall</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Shopping Categories -->
+    <section class="section">
+        <h2 class="section-title">Exclusive Collections</h2>
+        <div class="category-grid">
+            <a href="men.html" class="category-card" style="text-decoration: none; color: inherit;">
+                <img onerror="handleImageError(this)" src="https://images.unsplash.com/photo-1490114538077-0a7f8cb49891?q=80&w=2070&auto=format&fit=crop" alt="Men's Fashion">
+                <div class="category-overlay">
+                    <h3>Men's Fashion</h3>
+                    <p>Sharp, Stylish, Sophisticated</p>
+                </div>
+            </a>
+            <a href="women.html" class="category-card" style="text-decoration: none; color: inherit;">
+                <img onerror="handleImageError(this)" src="https://images.unsplash.com/photo-1483985988355-763728e1935b?q=80&w=2070&auto=format&fit=crop" alt="Women's Fashion">
+                <div class="category-overlay">
+                    <h3>Women's Fashion</h3>
+                    <p>Elegant, Graceful, Trending</p>
+                </div>
+            </a>
+            <a href="kids.html" class="category-card" style="text-decoration: none; color: inherit;">
+                <img onerror="handleImageError(this)" src="https://images.unsplash.com/photo-1543163521-1bf539c55dd2?q=80&w=2080&auto=format&fit=crop" alt="Kids Collection">
+                <div class="category-overlay">
+                    <h3>Kids Collection</h3>
+                    <p>Fun, Trendy, Comfortable</p>
+                </div>
+            </a>
+            <a href="children.html" class="category-card" style="text-decoration: none; color: inherit;">
+                <img onerror="handleImageError(this)" src="https://images.unsplash.com/photo-1519457431-75f7a7444522?q=80&w=1974&auto=format&fit=crop" alt="Children's World">
+                <div class="category-overlay">
+                    <h3>Children's World</h3>
+                    <p>Toys, Fashion & More</p>
+                </div>
+            </a>
+            <a href="traditional.html" class="category-card" style="text-decoration: none; color: inherit;">
+                <img onerror="handleImageError(this)" src="https://images.unsplash.com/photo-1610030469983-98e550d6193c?q=80&w=1974&auto=format&fit=crop" alt="Traditional">
+                <div class="category-overlay">
+                    <h3>Traditional Heritage</h3>
+                    <p>Silk Sarees & Sherwanis</p>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="section" id="men">
+        <h2 class="section-title">Trending Now</h2>
+        <div class="product-grid">
+            <!-- Product 1 -->
+            <div class="product-card">
+                <div class="product-img">
+                    <img onerror="handleImageError(this)" src="https://images.unsplash.com/photo-1617135663412-2804d9e77699?q=80&w=1974&auto=format&fit=crop" alt="Luxury Shirt">
+                </div>
+                <div class="product-info">
+                    <h4>Royal Cotton Slim Fit</h4>
+                    <div class="price-tag">
+                        <span class="current-price">₹1,299</span>
+                        <span class="old-price">₹1,999</span>
+                        <span class="discount">-35%</span>
+                    </div>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <div class="product-btns">
+                        <button class="btn-add-cart">Add to Cart</button>
+                        <button class="btn-buy">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 2 -->
+            <div class="product-card">
+                <div class="product-img">
+                    <img onerror="handleImageError(this)" src="https://images.unsplash.com/photo-1617114919297-3c8ddb01f599?q=80&w=1974&auto=format&fit=crop" alt="Men's Blazer">
+                </div>
+                <div class="product-info">
+                    <h4>Premium Midnight Blazer</h4>
+                    <div class="price-tag">
+                        <span class="current-price">₹4,499</span>
+                        <span class="old-price">₹5,999</span>
+                        <span class="discount">-25%</span>
+                    </div>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="product-btns">
+                        <button class="btn-add-cart">Add to Cart</button>
+                        <button class="btn-buy">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 3 -->
+            <div class="product-card">
+                <div class="product-img">
+                    <img onerror="handleImageError(this)" src="https://images.unsplash.com/photo-1610030469983-98e550d6193c?q=80&w=1974&auto=format&fit=crop" alt="Traditional Saree">
+                </div>
+                <div class="product-info">
+                    <h4>Kanchipuram Silk Saree</h4>
+                    <div class="price-tag">
+                        <span class="current-price">₹12,499</span>
+                        <span class="old-price">₹15,000</span>
+                        <span class="discount">-10%</span>
+                    </div>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="product-btns">
+                        <button class="btn-add-cart">Add to Cart</button>
+                        <button class="btn-buy">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 4 -->
+            <div class="product-card">
+                <div class="product-img">
+                    <img onerror="handleImageError(this)" src="https://images.unsplash.com/photo-1603217192634-61068e4d4bf9?q=80&w=1935&auto=format&fit=crop" alt="Kids Wear">
+                </div>
+                <div class="product-info">
+                    <h4>Ethnic Junior Collection</h4>
+                    <div class="price-tag">
+                        <span class="current-price">₹899</span>
+                        <span class="old-price">₹1,499</span>
+                        <span class="discount">-40%</span>
+                    </div>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="product-btns">
+                        <button class="btn-add-cart">Add to Cart</button>
+                        <button class="btn-buy">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI Virtual Try-On Section -->
+    <section class="ai-section">
+        <div class="ai-content">
+            <span class="ai-badge">AI Powered</span>
+            <h2 class="luxury-font">Virtual Mirror</h2>
+            <p>Experience the future of fashion. Our AI-powered virtual try-on mirror allows you to see how any outfit looks on you instantly, without leaving the comfort of your home or while you explore the mall.</p>
+            <ul style="list-style: none; color: #ccc; margin-bottom: 2rem;">
+                <li><i class="fas fa-check-circle" style="color: var(--gold); margin-right: 10px;"></i> Instant 3D Body Mapping</li>
+                <li><i class="fas fa-check-circle" style="color: var(--gold); margin-right: 10px;"></i> Real-time Fabric Simulation</li>
+                <li><i class="fas fa-check-circle" style="color: var(--gold); margin-right: 10px;"></i> Precise Size Recommendations</li>
+            </ul>
+            <a href="#" class="btn btn-primary">Try Now</a>
+        </div>
+        <div class="ai-visual">
+            <div class="ai-frame">
+                <img onerror="handleImageError(this)" src="https://images.unsplash.com/photo-1558769132-cb1aea458c5e?q=80&w=1974&auto=format&fit=crop" alt="Virtual Mirror">
+                <div class="scan-line"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Special Offer Section -->
+    <section class="offer-banner" id="offers">
+        <div class="offer-content">
+            <h2 class="luxury-font">Grand Opening Sale</h2>
+            <p style="font-size: 1.5rem; letter-spacing: 2px;">Get Up To 10% Discount On Purchases Above ₹2,500</p>
+            <div class="timer">
+                <div class="timer-item"><span id="days">02</span><label>Days</label></div>
+                <div class="timer-item"><span id="hours">14</span><label>Hrs</label></div>
+                <div class="timer-item"><span id="mins">45</span><label>Mins</label></div>
+                <div class="timer-item"><span id="secs">30</span><label>Secs</label></div>
+            </div>
+            <a href="#" class="btn btn-primary">Claim Offer</a>
+        </div>
+    </section>
+
+    <!-- Internal Mall 3D Showcase -->
+    <section class="video-section">
+        <div class="video-overlay">
+            <h2 class="luxury-font" data-aos="fade-up">Step Into Luxury</h2>
+            <p data-aos="fade-up" data-delay="200">Experience the grand architecture of Garuda Mall</p>
+        </div>
+        <video autoplay muted loop playsinline class="bg-video">
+            <source src="https://assets.mixkit.co/videos/preview/mixkit-modern-shopping-mall-with-escalators-and-shops-4416-large.mp4" type="video/mp4">
+            <img onerror="handleImageError(this)" src="https://images.unsplash.com/photo-1567401893414-76b7b1e5a7a5?auto=format&fit=crop&w=1200&q=80" alt="Mall Interior Fallback">
+        </video>
+    </section>
+
+    <!-- Interior Showcase Gallery (Refined) -->
+    <section class="section">
+        <h2 class="section-title" data-aos="zoom-in">The Garuda Experience</h2>
+        <div class="gallery-grid">
+            <div class="gallery-item wide" data-aos="fade-right">
+                <img onerror="handleImageError(this)" src="https://images.unsplash.com/photo-1567401893414-76b7b1e5a7a5?q=80&w=2070&auto=format&fit=crop" alt="Mall Interior">
+            </div>
+            <div class="gallery-item tall" data-aos="fade-up">
+                <img onerror="handleImageError(this)" src="https://images.unsplash.com/photo-1540958992-35059bbffcc2?q=80&w=1910&auto=format&fit=crop" alt="Escalator">
+            </div>
+            <div class="gallery-item" data-aos="fade-left">
+                <img onerror="handleImageError(this)" src="https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?q=80&w=2071&auto=format&fit=crop" alt="Luxury Display">
+            </div>
+            <div class="gallery-item wide" data-aos="zoom-in">
+                <img onerror="handleImageError(this)" src="https://images.unsplash.com/photo-1511317557367-c118b9a48086?q=80&w=2070&auto=format&fit=crop" alt="Fashion Show">
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h3 class="logo">GARUDA MALL</h3>
+                <p>The ultimate destination for fashion, tradition, and luxury in Palamaner.</p>
+                <p style="margin-top: 1rem; font-size: 0.9rem; color: var(--gold);">Owned by: <strong>Mr. Kishore</strong></p>
+                <div class="social-links">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-whatsapp"></i>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Men's Collection</a></li>
+                    <li><a href="#">Women's Collection</a></li>
+                    <li><a href="#">Kids Wear</a></li>
+                    <li><a href="#">Traditional Wear</a></li>
+                    <li><a href="#">New Arrivals</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Contact Us</h3>
+                <ul>
+                    <li><i class="fas fa-map-marker-alt"></i> Palamaner, Chittoor Dist, AP</li>
+                    <li><i class="fas fa-phone"></i> <a href="tel:+919390542261" style="color: inherit; text-decoration: none;">+91 93905 42261</a></li>
+                    <li><i class="fas fa-envelope"></i> info@garudamall.com</li>
+                    <li><i class="fas fa-clock"></i> 10:00 AM - 10:00 PM</li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Newsletter</h3>
+                <p>Stay updated with our latest offers.</p>
+                <div style="margin-top: 1.5rem; display: flex;">
+                    <input type="email" placeholder="Email Address" style="padding: 0.8rem; border: none; border-radius: 5px 0 0 5px; width: 100%;">
+                    <button class="btn-buy" style="border-radius: 0 5px 5px 0; border: none; padding: 0 1rem;">Join</button>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Garuda Mall Palamaner. Owned by Kishore. All Rights Reserved. | Designed with Luxury</p>
+        </div>
+    </footer>
+
+    <!-- Floating Chat -->
+    <div class="chat-btn">
+        <i class="fas fa-comment-dots"></i>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+</body>
+</html>
