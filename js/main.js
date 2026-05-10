@@ -94,3 +94,47 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         }
     });
 });
+
+// Chatbot Functionality
+const chatbotBtn = document.getElementById('chatbot-btn');
+const chatbotWindow = document.getElementById('chatbot-window');
+const closeChat = document.getElementById('close-chat');
+const sendChat = document.getElementById('send-chat');
+const chatInput = document.getElementById('chat-input');
+const chatMessages = document.getElementById('chatbot-messages');
+
+if (chatbotBtn && chatbotWindow) {
+    chatbotBtn.addEventListener('click', () => {
+        chatbotWindow.classList.toggle('active');
+    });
+
+    closeChat.addEventListener('click', () => {
+        chatbotWindow.classList.remove('active');
+    });
+
+    const addMessage = (text, type) => {
+        const msgDiv = document.createElement('div');
+        msgDiv.className = message -message;
+        msgDiv.textContent = text;
+        chatMessages.appendChild(msgDiv);
+        chatMessages.scrollTop = chatMessages.scrollHeight;
+    };
+
+    const handleSend = () => {
+        const text = chatInput.value.trim();
+        if (text) {
+            addMessage(text, 'user');
+            chatInput.value = '';
+            
+            // Simulate bot response
+            setTimeout(() => {
+                addMessage('Thank you for your message! Our representative will be with you shortly to assist with your Garuda Mall experience.', 'bot');
+            }, 1000);
+        }
+    };
+
+    sendChat.addEventListener('click', handleSend);
+    chatInput.addEventListener('keypress', (e) => {
+        if (e.key === 'Enter') handleSend();
+    });
+}
